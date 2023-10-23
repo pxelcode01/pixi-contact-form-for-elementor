@@ -83,4 +83,5 @@ No! Elementor provides you with all the widgets and features that you need to bu
 1. Design Contact Form Elements individually
 2. Fully Customizable
 3. Fully Responsive 
+3. Fluent Form Deisgn
 
