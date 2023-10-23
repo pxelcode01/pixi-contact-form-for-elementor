@@ -1,0 +1,24 @@
+name: Update Readme
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Update Readme
+        run: |
+          # Add your commands to update the readme.txt file
+          echo "Your updated readme content" > readme.txt
+          git add readme.txt
+          git commit -m "Update readme.txt"
+          git push
+        env:
+          PIXI_CONTACT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
