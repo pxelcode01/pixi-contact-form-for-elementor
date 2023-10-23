@@ -2,21 +2,17 @@
 /**
  * Plugin Name: Pixi Contact Form for Elementor 
  * Description: Advanced Contact Form for elementor pagebuilder
- * Plugin URI:  #
+ * Plugin URI:  https://wordpress.org/plugins/pixi-contact-form-for-elementor/
  * Version:     1.0.1
  * Author:      pxelcode
  * Author URI:  https://pxelcode.com/
-
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- *
  * Requires PHP:      7.2
  * Elementor tested up to:     3.5.0
  * Elementor Pro tested up to: 3.5.0
- * 
  * Text Domain: pixi-contactform
  * Domain Path:       /languages
- * 
  * GitHub Plugin URI: https://github.com/pxelcode01/pixi-contact-form-for-elementor
  * GitHub Branch: main
  */
