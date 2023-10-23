@@ -1,16 +1,30 @@
-name: Pixi Contact Form For Elementor
+name: Pixi Contact Form Plugin Assets Deployment
+
 on:
-push:
-branches:
-- main
+  push:
+    branches:
+      - main
+
 jobs:
-trunk:
-name: Pixi Contact Form For Elementor
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@master
-- name: WordPress.org plugin asset/readme update
-uses: 10up/action-wordpress-plugin-asset-update@stable
-env:
-SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Deploy Plugin Assets
+        run: |
+          # Replace with your deployment script or commands
+          # Example: Deploy assets to WordPress.org using SVN
+          # Remember to set up SVN credentials as secrets
+          svn co https://plugins.svn.wordpress.org/pixi-contact-form-for-elementor/ /tmp/pixi-contact-form-for-elementor
+          cp -r assets/* /tmp/pixi-contact-form-for-elementor/assets/
+          cd /tmp/pixi-contact-form-for-elementor
+          svn add assets/
+          svn commit -m "Deploy assets for version 1.0.1"
+          svn up
+          rm -rf /tmp/pixi-contact-form-for-elementor
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
