@@ -1,4 +1,4 @@
-name: WordPress Plugin asset/readme update
+name: Pixi Contact Form For Elementor
 on:
 push:
 branches:
