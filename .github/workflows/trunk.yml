@@ -1,0 +1,33 @@
+name: Update WordPress.org Plugin Trunk
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-trunk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up SVN
+        run: |
+          sudo apt-get update
+          sudo apt-get install subversion
+          echo "[/]" > ~/.subversion/servers
+          echo "store-plaintext-passwords = no" >> ~/.subversion/servers
+
+      - name: Deploy to WordPress.org
+        run: |
+          cd https://wordpress.org/plugins/pixi-contact-form-for-elementor/
+
+          # Update the plugin version and assets
+
+          svn commit -m "Update plugin to version X.Y.Z" --username pxelcode --password Esrat91@@ https://plugins.svn.wordpress.org/pixi-contact-form-for-elementor/trunk/
+
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
