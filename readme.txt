@@ -8,7 +8,6 @@ Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-
 == Description ==
 
 Enhance your Contact Form 7 & Fluent form Plugin Design customization using Elementor Page builder with Pixi Contact Form for Elementor. Add powers to your page builder using our easy-to-use elements those were designed to make your next WordPress page design easier and 
