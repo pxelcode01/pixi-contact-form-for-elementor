@@ -2,15 +2,16 @@
 Contributors: pxelcode
 Tags: elementor,contact Form 7, Contactform ,Fluent Form , drag and drop,elementor page builder,WordPress
 Requires at least: 4.7
-Tested up to: 6.3
-Stable tag: 1.0.1
+Tested up to: 7.0
+Stable tag: 1.0.2
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
+
 == Description ==
 
-Enhance your Contact Form7 & Fluent form Plugin Design customization using Elementor Page builder with Pixi Contact Form for Elementor. Add powers to your page builder using our easy-to-use elements those were designed to make your next WordPress page design easier and 
+Enhance your Contact Form 7 and Fluent Form customization using Elementor Page builder with Pixi Contact Form for Elementor. Add powers to your page builder using our easy-to-use elements those were designed to make your next WordPress page design easier and 
 prettier than ever before.
 
 
@@ -79,8 +80,8 @@ No! Elementor provides you with all the widgets and features that you need to bu
 
 == Features ==
 
-1. Design Contact Form Elements individually
+1. Design Contact Form Elements individually 
 2. Fully Customizable
 3. Fully Responsive 
-3. Custom Fluent Form Design 
+4. Fully Editable with controls
 
