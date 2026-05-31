@@ -20,3 +20,4 @@ jobs:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
           SLUG: pixi-contact-form-for-elementor
+          PLUGIN_MAIN_FILE: pixi-contact-form-for-elementor.php
